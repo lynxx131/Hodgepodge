@@ -508,7 +508,7 @@ public class FixesConfig {
     @Config.DefaultBoolean(true)
     public static boolean fixExtraUtilitiesEnderQuarryFreeze;
 
-    @Config.Comment("Fixes a crash caused by BlockBreakingRegistry trying to call client code on the server")
+    @Config.Comment("Fixes a crash caused by Extra Utilities BlockBreakingRegistry trying to call client code on the server")
     @Config.DefaultBoolean(true)
     public static boolean fixExtraUtilitiesBlockBreakingRegistryCrash;
 
