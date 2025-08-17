@@ -1301,7 +1301,7 @@ public enum Mixins implements IMixins {
             .addRequiredMod(TargetedMod.EXTRA_UTILITIES)
             .setPhase(Phase.LATE)),
     FIX_BLOCK_BREAKING_REGISTRY_CRASH(new MixinBuilder("Fix server crash due Extra Utilities calling client-side code on the server")
-            .addServerMixins("extrautilities.MixinBlockBreakingRegistry_ServerCrashFix")
+            .addCommonMixins("extrautilities.MixinBlockBreakingRegistry_ServerCrashFix")
             .setApplyIf(() -> FixesConfig.fixExtraUtilitiesBlockBreakingRegistryCrash)
             .addRequiredMod(TargetedMod.EXTRA_UTILITIES)
             .setPhase(Phase.LATE)),
