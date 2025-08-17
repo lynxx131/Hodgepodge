@@ -508,6 +508,10 @@ public class FixesConfig {
     @Config.DefaultBoolean(true)
     public static boolean fixExtraUtilitiesEnderQuarryFreeze;
 
+    @Config.Comment("Fixes a crash caused by BlockBreakingRegistry trying to call client code on the server")
+    @Config.DefaultBoolean(true)
+    public static boolean fixExtraUtilitiesBlockBreakingRegistryCrash;
+
     @Config.Comment("Fixes the healing axe not healing mobs when attacking them")
     @Config.DefaultBoolean(true)
     public static boolean fixExtraUtilitiesHealingAxeHeal;
